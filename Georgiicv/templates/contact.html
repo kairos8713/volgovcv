@@ -1,0 +1,30 @@
+{% extends "navbar.html" %}
+{% block body %}
+<section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div style="position: absolute; top: 10%; left: 0%; background-color: #8ea7e9; width: 40%; height: 90%; z-index: 0;"></div>
+    <h1 id="may">Contact</h1>
+    <article class="contact">
+        <form action="/send" method = "post">
+            <p>Name</p>
+            <input type="text" class="form-control" name = "name">
+            <p>Email</p>
+            <input type="text" class="form-control" name = "email">
+            <p>Subject</p>
+            <input type="text" class="form-control" name = "subject">
+            <p id="label">Your Message</p>
+            <textarea type="text" class="ftextarea" name="text"></textarea>
+            <button type = "submit">Send</button>
+        </form>
+    </article>
+</section>
+<div class="apop1">
+    <p>Your message has been sent successfully</p>
+    <span class="apopp1"></span>
+</div>
+{% endblock %}
